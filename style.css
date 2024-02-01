@@ -44,3 +44,33 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+:root {
+  --c: green;
+}
+
+body:has(#szin:checked) {
+  --c: red;
+}
+h1 {
+  color: var(--c);
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  color: darkgray;
+}
+.active {
+  text-decoration: underline;
+  cursor: not-allowed;
+}
+.active:hover {
+  color: rgb(4, 255, 222);
+}
+@media only screen and (max-width: 412px) {
+  header a {
+    color: red;
+  }
+}
